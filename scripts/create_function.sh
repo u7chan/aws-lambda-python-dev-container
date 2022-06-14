@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "$1"  -o  -z "$2" -o  -z "$3" ]
+if [ -z "$1" -o -z "$2" -o -z "$3" ]
 then
     echo "Usage:"
     echo "  create_function [lambda-function-name] [deploy-source-path] [lambda-function-role]"

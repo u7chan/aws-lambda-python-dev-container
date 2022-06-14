@@ -1,9 +1,9 @@
 #!/bin/sh
 
-if [ -z "$1"  -o  -z "$2" ]
+if [ -z "$1" -o -z "$2" ]
 then
     echo "Usage:"
-    echo " update_function [lambda-function-name] [deploy-source-path]"
+    echo "  update_function [lambda-function-name] [deploy-source-path]"
     echo ""
     exit 0
 fi
