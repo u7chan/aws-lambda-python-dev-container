@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      - .:/root/workspace
+    environment:
+      TZ: Asia/Tokyo
+    working_dir: /root/workspace/Projects
+    command: /bin/sh -c "while sleep 1000; do :; done"
+  aws-cli:
+    image: amazon/aws-cli:latest
